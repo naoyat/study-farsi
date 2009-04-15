@@ -1,0 +1,55 @@
+(define dic '(
+			  ;第5課
+			  ;p.23
+			  ("AN"     "a:n"      pron (あれ それ))
+			  ("KTAB"   "keta:b"   n    (本))
+			  ("@ST"    "ast"      be   (です))
+			  ("IN"     "i:n"      pron (これ))
+			  ("BRzRG"  "bozorg"   adj  (大きい))
+			  ;p.24
+			  ("SG"     "sa:g"     n    (犬))
+			  ("KVChK"  "ku:chek"  adj  (小さい))
+			  ("MDAD"   "meda:d"   n    (鉛筆))
+			  ("@SB"    "asb"      n    (馬))
+			  ("DRKhT"  "derakht"  n    (木))
+			  ("KAGhDz" "ka:ghaz"  n    (紙))
+			  ("NAN"    "na:n"     n    (パン))
+			  ("AB"     "a:b"      n    (水))
+			  ("SRD"    "sard"     adj  (冷たい 寒い))
+			  ("GL"     "gol"      n    (花))
+			  ("QShNG"  "ghashang" adj  (美しい))
+			  ;p.25
+			  ("SYB"    "si:b"     n    (リンゴ))
+			  ("GRBH"   "gorbe"    n    (猫))
+			  ("SFYD"   "sefi:d"   adj  (白い))
+			  ;p.26
+			  ("AYA"     "a:ya:"    AYA   (？))
+			  ("?"       "?"        ?     (？))
+			  ("BLH"     "bale"     yn    (はい))
+			  ;p.27
+			  ("NH KhYR" "na kheir" yn    (いいえ))
+			  ("NKhYR"   "nakheir"  yn    (いいえ))
+			  ("NYST"    "ni:st"    be    (ではありません))
+;			  ("ChYST"   "chi:st"   x     (何ですか))
+			  ("ChYST"   "chi:st"   S     ("ChH" "@ST"))
+			  ("ChH"     "che"      qu    (何))
+			  ("KY"      "ki:"      qu    (誰))
+;			  ("KYST"    "ki:st"    x     (誰ですか))
+			  ("KYST"    "ki:st"    S     ("KY" "@ST"))
+			  ("KJA"     "koja:"    qu    (どこ))
+;			  ("KJAST"   "koja:st"  x     (どこですか))
+			  ("KJAST"   "koja:st"  S     ("KJA" "@ST"))
+			  ("INJA"    "i:nja:"   pron  (ここ))
+			  ;p.28
+			  ("JA"      "ja:"      n     (場所))
+			  ("TVT"     "tu:t"     n     (桑の実))
+			  ("U"       "u:"       pron  (彼 彼女))
+			  ("HSYN"    "hosein"   n     (ホセイン {人名,男}))
+			  ("IRAN"    "i:ra:n"   n     (イラン))
+			  ("QLM"     "ghalam"   n     (ペン))
+			  ;p.29
+			  ("MYRz"    "mi:z"     n     (机))
+			  (".SNDLY"  "sandali:" n     (いす))
+			  ("RzhAPN"  "zha:pon"  n     (日本))
+			  ;
+			  ))

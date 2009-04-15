@@ -1,0 +1,38 @@
+;;
+;; Lesson 6 - TEST
+;;
+(define-macro (faTL->ja-test cap faTL ja)
+  `(test* ,(string-append cap faTL) ,ja (faTL->ja ,faTL)))
+
+(test-section "第6課:本文")
+(faTL->ja-test "" "AYA IN KTAB @ST ?" "これは本ですか？")
+(faTL->ja-test "" "IN KTAB @ST ?" "これは本ですか？")
+(faTL->ja-test "" "AYA IN KTAB @ST ?" "これは本ですか？")
+(faTL->ja-test "" "IN KTAB @ST ?" "これは本ですか？")
+(faTL->ja-test "" "AYA IN SG @ST ?" "これは犬ですか？")
+(faTL->ja-test "" "BLH IN SG @ST" "はい、これは犬です。")
+(faTL->ja-test "" "AYA IN GRBH @ST ?" "これは猫ですか？")
+(faTL->ja-test "" "NKhIR IN GRBH NIST" "いいえ、これは猫ではありません。")
+(faTL->ja-test "" "IN ChIST ?" "これは何ですか？")
+(faTL->ja-test "" "INJA KJAST ?" "ここはどこですか？")
+(faTL->ja-test "" "AN ChIST ?" "あれは何ですか？")
+(faTL->ja-test "" "AN TUT @ST" "あれは桑の実です。")
+(faTL->ja-test "" "U KIST ?" "彼は誰ですか？")
+(faTL->ja-test "" "U HSIN @ST" "彼はホセインです。")
+(faTL->ja-test "" "INJA KJAST ?" "ここはどこですか？")
+(faTL->ja-test "" "INJA IRAN @ST" "ここはイランです。")
+
+(test-section "第6課:練習")
+(faTL->ja-test "1) " "AYA IN GL @ST ?" "これは花ですか？")
+(faTL->ja-test "   " "BLH IN GL @ST" "はい、これは花です。")
+(faTL->ja-test "2) " "AYA IN QLM @ST ?" "これはペンですか？")
+(faTL->ja-test "   " "NKhIR IN QLM NIST" "いいえ、これはペンではありません。")
+(faTL->ja-test "3) " "IN ChIST ?" "これは何ですか？")
+(faTL->ja-test "   " "IN MIRz @ST" "これは机です。")
+(faTL->ja-test "4) " "AN ChIST ?" "あれは何ですか？")
+(faTL->ja-test "   " "AN .SNDLI @ST" "あれは椅子です。")
+(faTL->ja-test "5) " "INJA KJAST ?" "ここはどこですか？")
+(faTL->ja-test "   " "INJA RzhAPN @ST" "ここは日本です。")
+
+(test-section "第6課:@STの縮約")
+(faTL->ja-test "" "AN .SNDLIST" "あれは椅子です。")
